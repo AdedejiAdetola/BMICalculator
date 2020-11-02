@@ -1,0 +1,32 @@
+body
+{
+  margin:0px;
+  font-family: 'Annie Use Your Telescope', cursive;
+  font-weight: bold;
+  background-color: #ffa5a5;
+}
+.container
+{ 
+  height:500px;
+  position: relative;
+  text-align: center;
+  background-color:#aaaaaa;
+  width:90%;
+  margin:auto;
+  border-radius: 25px;
+  top:45px;
+}
+
+.box
+{
+  width: 50%; height: 50%;
+  position: absolute;
+  left:25%;
+  bottom:25%;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 30px; /*25% of 50% of 500px*/
+  background-color: #ffa5a5;
+  border-radius: 25%;
+}
+

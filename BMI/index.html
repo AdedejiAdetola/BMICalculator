@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI CALCULATOR</h1>
+    <div class="box">
+      <label>Input your weight:</label>
+      <input type="number" id = "weight">
+      <br><br>
+      <label for="">Input your height:</label>
+      <input type="number" id = "height">
+      <br><br>
+      <button type="button" onclick="BMIcalculator()" id="buttoni">click here</button>
+      <div>
+        <p id="BMI"></p>
+      </div>
+    </div>
+  </div>  
+</body>
+<script>
+  function BMIcalculator()
+{ 
+  var kg = document.getElementById("weight").value;
+  var m = document.getElementById("height").value;
+  var BMI= kg/Math.pow(m,2);
+  var bmi = Math.round(BMI);
+  document.getElementById("BMI").innerHTML="BMI = "+bmi;
+}
+</script>
+</html>  
